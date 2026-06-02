@@ -26,7 +26,6 @@ export default function LoginForm({ onLoginResult }: LoginFormProps) {
       {/* Input de Usuario con el placeholder de ejemplo de la imagen */}
       <TextInput
         style={styles.input}
-        placeholder="simon@galaxies.dev"
         placeholderTextColor="#555"
         value={username}
         onChangeText={setUsername}
@@ -36,7 +35,6 @@ export default function LoginForm({ onLoginResult }: LoginFormProps) {
       {/* Input de Contraseña */}
       <TextInput
         style={styles.input}
-        placeholder="*******"
         placeholderTextColor="#000"
         secureTextEntry={true}
         value={password}
