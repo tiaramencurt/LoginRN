@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, SafeAreaView, KeyboardAvoidingView, Platform, ScrollView, StatusBar } from 'react-native';
+import { styles } from './App.styles';
 import Header from './src/components/Header';
 import Logo from './src/components/Logo';
 import LoginForm from './src/components/LoginForm';
@@ -18,7 +19,7 @@ export default function App() {
     <SafeAreaView style={styles.screen}>
       <StatusBar backgroundColor="#6236FF" barStyle="light-content" />
 
-      {/* DETALLE EXTREMO: Ahora el título se pasa como Prop limpia */}
+      {/* Título se pasa como Prop */}
       <Header title="Login App (Berman, Trutner)" />
 
       <KeyboardAvoidingView 
@@ -41,22 +42,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#6236FF', 
-  },
-  container: {
-    flex: 1,
-    backgroundColor: '#F2F2F4', 
-  },
-  scrollContainer: {
-    flexGrow: 1,
-    justifyContent: 'flex-start',
-    paddingBottom: 30,
-  },
-  messageWrapper: {
-    paddingHorizontal: 30, // Mismo padding que el formulario para que quede perfectamente alineado
-    marginTop: 15,
-  },
-});
