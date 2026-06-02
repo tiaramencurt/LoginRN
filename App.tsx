@@ -16,11 +16,10 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.screen}>
-      {/* Barra de estado del sistema combinado con el violeta */}
       <StatusBar backgroundColor="#6236FF" barStyle="light-content" />
 
-      {/* 1. COMPONENTE HEADER TOTALMENTE AISLADO */}
-      <Header />
+      {/* DETALLE EXTREMO: Ahora el título se pasa como Prop limpia */}
+      <Header title="Login App (Berman, Trutner)" />
 
       <KeyboardAvoidingView 
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'} 
@@ -28,13 +27,10 @@ export default function App() {
       >
         <ScrollView contentContainerStyle={styles.scrollContainer} keyboardShouldPersistTaps="handled">
           
-          {/* 2. Componente Logo de Coca */}
           <Logo />
 
-          {/* 3. Componente Formulario de Login */}
           <LoginForm onLoginResult={handleLoginResult} />
 
-          {/* 4. Componente de Mensajes de Éxito o Error */}
           <View style={styles.messageWrapper}>
             <StatusMessage type={messageType} message={messageText} />
           </View>
@@ -48,11 +44,11 @@ export default function App() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#6236FF', // Fondo del notch del cel
+    backgroundColor: '#6236FF', 
   },
   container: {
     flex: 1,
-    backgroundColor: '#F2F2F4', // Gris claro de la imagen
+    backgroundColor: '#F2F2F4', 
   },
   scrollContainer: {
     flexGrow: 1,
@@ -60,7 +56,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
   },
   messageWrapper: {
-    paddingHorizontal: 30,
+    paddingHorizontal: 30, // Mismo padding que el formulario para que quede perfectamente alineado
     marginTop: 15,
   },
 });
