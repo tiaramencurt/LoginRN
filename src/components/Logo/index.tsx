@@ -8,7 +8,7 @@ export default function Logo() {
     <View style={styles.container}>
       <Image 
         // Importamos la imagen local desde la carpeta de assets
-        source={require('../../assets/coca-logo.png')} 
+        source={require('../../../assets/coca-logo.png')} 
         style={styles.image} 
       />
     </View>

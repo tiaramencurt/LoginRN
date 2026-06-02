@@ -3,41 +3,42 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     width: '100%',
-    paddingHorizontal: 20,
-  },
-  label: {
-    fontSize: 16,
-    color: '#333333',
-    marginBottom: 5,
-    fontWeight: '600',
+    paddingHorizontal: 30, // Un poco más de margen lateral como la imagen
+    marginTop: 20,
   },
   input: {
     backgroundColor: '#FFFFFF',
-    borderWidth: 1,
-    borderColor: '#CCCCCC',
-    borderRadius: 8,
+    borderWidth: 1.5,
+    borderColor: '#6236FF',     // Violeta de los bordes según image_4b6b7f.png
+    borderRadius: 5,            // Bordes un poco menos redondeados
     paddingHorizontal: 15,
-    paddingVertical: 12,
+    paddingVertical: 14,
     fontSize: 16,
-    marginBottom: 20,          // Espaciado inferior para separar los campos
+    marginBottom: 15,
     color: '#000000',
   },
   button: {
-    backgroundColor: '#E41E26', // Rojo característico de Coca-Cola
-    borderRadius: 8,
-    paddingVertical: 15,
+    backgroundColor: '#8C66FF', // Violeta un poco más claro para el botón
+    borderRadius: 5,
+    paddingVertical: 16,
     alignItems: 'center',
-    marginTop: 10,
-    // Sombrita suave para que parezca un botón nativo prolijo
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 3,
-    elevation: 3,
+    marginTop: 15,
+    borderWidth: 1,
+    borderColor: '#6236FF',
   },
   buttonText: {
     color: '#FFFFFF',
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 16,
+    fontWeight: 'normal',       // En la imagen no se ve una negrita fuerte
+    textTransform: 'uppercase', // Fuerza el texto a MAYÚSCULAS ("INGRESAR")
+  },
+  footerLinks: {
+    marginTop: 25,
+    alignItems: 'center',       // Centra los textos inferiores
+  },
+  linkText: {
+    color: '#000000',
+    fontSize: 16,
+    marginVertical: 10,         // Separación entre ambos textos
   },
 });
