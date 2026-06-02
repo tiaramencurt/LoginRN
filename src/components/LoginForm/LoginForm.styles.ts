@@ -3,14 +3,14 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     width: '100%',
-    paddingHorizontal: 30, // Un poco más de margen lateral como la imagen
+    paddingHorizontal: 30,
     marginTop: 20,
   },
   input: {
     backgroundColor: '#FFFFFF',
     borderWidth: 1.5,
-    borderColor: '#6236FF',     // Violeta de los bordes según image_4b6b7f.png
-    borderRadius: 5,            // Bordes un poco menos redondeados
+    borderColor: '#6236FF',
+    borderRadius: 5,
     paddingHorizontal: 15,
     paddingVertical: 14,
     fontSize: 16,
@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     color: '#000000',
   },
   button: {
-    backgroundColor: '#8C66FF', // Violeta un poco más claro para el botón
+    backgroundColor: '#8C66FF',
     borderRadius: 5,
     paddingVertical: 16,
     alignItems: 'center',
@@ -29,16 +29,16 @@ export const styles = StyleSheet.create({
   buttonText: {
     color: '#FFFFFF',
     fontSize: 16,
-    fontWeight: 'normal',       // En la imagen no se ve una negrita fuerte
-    textTransform: 'uppercase', // Fuerza el texto a MAYÚSCULAS ("INGRESAR")
+    fontWeight: 'normal',
+    textTransform: 'uppercase',
   },
   footerLinks: {
     marginTop: 25,
-    alignItems: 'center',       // Centra los textos inferiores
+    alignItems: 'center',
   },
   linkText: {
     color: '#000000',
     fontSize: 16,
-    marginVertical: 10,         // Separación entre ambos textos
+    marginVertical: 10,
   },
 });

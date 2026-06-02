@@ -23,7 +23,7 @@ export default function LoginForm({ onLoginResult }: LoginFormProps) {
 
   return (
     <View style={styles.container}>
-      {/* Input de Usuario con el placeholder de ejemplo de la imagen */}
+      {/* Input de Usuario */}
       <TextInput
         style={styles.input}
         placeholderTextColor="#555"
@@ -49,7 +49,6 @@ export default function LoginForm({ onLoginResult }: LoginFormProps) {
         <Text style={styles.buttonText}>Ingresar</Text>
       </TouchableOpacity>
 
-      {/* Textos inferiores solicitados */}
       <View style={styles.footerLinks}>
         <TouchableOpacity>
           <Text style={styles.linkText}>Olvidaste la clave?</Text>

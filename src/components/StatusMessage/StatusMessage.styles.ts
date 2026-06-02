@@ -8,12 +8,12 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   errorBox: {
-    backgroundColor: '#FADBD8', // Fondo rojizo suave para el error
+    backgroundColor: '#FADBD8',
     borderColor: '#E74C3C',
     borderWidth: 1,
   },
   successBox: {
-    backgroundColor: '#D4EFDF', // Fondo verdoso suave para el éxito
+    backgroundColor: '#D4EFDF',
     borderColor: '#27AE60',
     borderWidth: 1,
   },
@@ -23,9 +23,9 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   errorText: {
-    color: '#c0392b',           // Texto rojo oscuro
+    color: '#c0392b',
   },
   successText: {
-    color: '#1e8449',           // Texto verde oscuro
+    color: '#1e8449',
   },
 });
